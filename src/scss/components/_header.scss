@@ -52,6 +52,12 @@
   }
 }
 
+.header__favorites {
+  @include tablet {
+    margin-left: auto;
+  }
+}
+
 .header__favorites svg {
   fill: var(--light);
 }

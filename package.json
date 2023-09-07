@@ -10,10 +10,13 @@
     "cache": "gulp cache",
     "backend": "gulp backend",
     "zip": "gulp zip",
-    "code": "editorconfig-checker"
+    "code": "editorconfig-checker",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d app"
   },
-  "author": "MaxGraph",
+  "author": "Vilena",
   "license": "ISC",
+  "homepage": "https://vilenan.github.io/ByCars",
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.7",
@@ -21,6 +24,7 @@
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "editorconfig-checker": "^4.0.1",
+    "gh-pages": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cheerio": "^1.0.0",
