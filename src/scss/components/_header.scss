@@ -1,0 +1,81 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 13;
+  background-color: var(--dark-2);
+  color: var(--light);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include tablet {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    justify-content: flex-start;
+    gap: 70px;
+  }
+}
+
+.header__call-request {
+    width: 42px;
+    height: 42px;
+    left: 0;
+    background-color: transparent;
+    background-image: url(../img/svg/phone.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+
+  @include tablet {
+    width: auto;
+    height: auto;
+    background-image: none;
+    background-color: var(--accent);
+    color: var(--dark);
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12px 35px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+}
+
+.header__favorites svg {
+  fill: var(--light);
+}
+
+.header__contacts {
+  display: none;
+
+  @include big-desktop {
+    display: block;
+    width: 160px;
+    margin-right: auto;
+  }
+}
+
+.header__tel {
+  color: var(--light);
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: auto;
+
+  @include tablet {
+    font-size: 18px;
+  }
+}
+

@@ -1,0 +1,151 @@
+.selection {
+  background-color: var(--accent-2);
+}
+
+.selection__wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px;
+
+  @include tablet {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr min-content;
+  }
+}
+
+.selection__content {
+  @include tablet {
+    grid-column: 4 span;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.selection__catalog {
+  width: 100%;
+  overflow-x: auto;
+
+  @include tablet {
+    overflow-x: inherit;
+    grid-column: 7 span;
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
+.selection__catalog-list {
+  display: flex;
+  flex-wrap: nowrap;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+  @include big-desktop {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+.offer {
+  &:not(:last-child){
+    margin-right: 15px;
+  }
+
+  @include tablet {
+    &:not(:last-child){
+      margin-right: 0;
+    }
+  }
+}
+
+.offer__top {
+  width: 121px;
+  height: 72px;
+  background-color: var(--light);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    fill: var(--dark)
+  }
+
+  @include tablet {
+    width: auto;
+  }
+}
+
+.offer__bottom{
+  display: flex;
+  flex-direction: column;
+  & span {
+    color: var(--dark);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+
+.selection__help {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding: 23px 20px;
+
+  @include tablet {
+    grid-column: 4 span;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.selection__help h3 {
+  margin: 0 0 4px 0;
+  color: var(--light);
+  font-family: var(--main-font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.selection__help p {
+  margin: 0 0 24px 0;
+  color: var(--light);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.16px;
+}
+
+.selection__text {
+  color: var(--dark);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+.selection__button {
+  width: 100%;
+}
+
+

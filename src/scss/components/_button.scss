@@ -1,0 +1,28 @@
+.button {
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 12px 35px;
+  cursor: pointer;
+  border-radius: 12px;
+  opacity: 1;
+  transition: opacity .2s;
+
+  &--dark {
+    background-color: var(--grey);
+    color: var(--light);
+  }
+
+  &--accent {
+    background-color: var(--accent);
+    color: var(--dark);
+  }
+
+  &:hover {
+    opacity: 0.7;
+    transition: opacity .3s;
+  }
+}

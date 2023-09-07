@@ -1,0 +1,150 @@
+.footer {
+  margin-top: 60px;
+  padding-top: 60px;
+  background-color: var(--grey-dark);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+  @include tablet {
+    padding-top: 34px;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__top {
+  margin-bottom: 60px;
+
+  @include tablet {
+    margin-bottom: 70px;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include tablet {
+    align-items: flex-end;
+  }
+}
+
+.footer__call-request {
+  margin-bottom: 30px;
+}
+
+.footer__requisites {
+  color: var(--light);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.16px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.footer__requisites span:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer__call-request {
+  width: 100%;
+}
+
+.footer__tel {
+  display: inline-block;
+  color: var(--accent);
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 8px;
+}
+
+.footer__email {
+  color: var(--light);
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.footer__bottom {
+  background-color: var(--grey);
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+  @include tablet {
+    padding-bottom: 14px;
+    padding-top: 14px;
+  }
+}
+
+.footer__bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.footer__text {
+  margin: 0;
+  color: var(--light);
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0.48px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 10px;
+    margin: 0 120px 0 0;
+  }
+}
+
+.footer__license-agreement,
+.footer__privacy-policy {
+  color: var(--light);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.16px;
+  text-decoration-line: underline;
+}
+.footer__license-agreement {
+  margin-bottom: 10px;
+
+  @include tablet {
+    margin: 0 30px 0 0;
+  }
+}

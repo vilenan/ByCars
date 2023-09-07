@@ -1,0 +1,15 @@
+.popup {
+  color: var(--dark);
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.popup__form,
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

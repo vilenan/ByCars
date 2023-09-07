@@ -1,0 +1,18 @@
+:root {
+  // base
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Suisse', sans-serif;
+  --content-width: 1780px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light: #fff;
+  --grey-dark: #202020;
+  --grey: #292929;
+  --grey-light: #f6f6f6;
+  --accent: #fff81b;
+  --accent-2: #dde9f5;
+  --dark-2: #151515;
+  --dark: #0C0C0C;
+}

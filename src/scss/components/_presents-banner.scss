@@ -1,0 +1,17 @@
+.presents-banner {
+  background-image: url("../img/bg-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-banner-2@2x.jpg");
+  }
+
+  @include small-tablet {
+    background-image: url("../img/bg-banner-2-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-banner-2-desktop@2x.jpg");
+    }
+  }
+}
