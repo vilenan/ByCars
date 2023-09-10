@@ -1,0 +1,30 @@
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-pagination {
+  width: 100%;
+}
+
+.catalog__list.swiper-wrapper {
+  margin-bottom: 52px;
+
+  @include tablet {
+    display: flex;
+    gap: 0;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 24px;
+  height: 14px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid var(--dark);
+  opacity: 1;
+  transform: scale(1);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--dark);
+}

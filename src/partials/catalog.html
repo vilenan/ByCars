@@ -3,269 +3,534 @@
     <h2 class="catalog__title title">Каталог авто</h2>
     <p class="catalog__text">В нашем сервисе более 1 500 авто.
       Мы проверяем качество, реставрируем и только после этого выставляем авто на продажу.</p>
-    <ul class="list-reset catalog__list">
-      <li class="catalog__item card">
-        <div class="card__header">
-          <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
-          <button class="btn-reset card__favorite">
-            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#favorite"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="card__image-wrapper">
+    <div class="swiper-container swiper">
+      <ul class="list-reset catalog__list swiper-wrapper">
+        <li class="catalog__item card swiper-slide">
+          <div class="card__header">
+            <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
+            <button class="btn-reset card__favorite">
+              <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#favorite"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="card__image-wrapper">
 
-          <picture>
-            <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
-            <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
-          </picture>
+            <picture>
+              <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
+              <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
+            </picture>
 
-          <ul class="list-reset card__options">
-            <li class="card__option">Подарок</li>
-            <li class="card__option">Трейд-ин</li>
-            <li class="card__option">Кредит 24</li>
-          </ul>
-        </div>
-        <div class="card__content">
-
-          <div class="card__content-wrapper">
-            <h3 class="card__title">Hyunday Solaris</h3>
-            <ul class="list-reset card__subtitle-list">
-              <li class="card__subtitle-item">2015 г.,</li>
-              <li class="card__subtitle-item">1.6 л,</li>
-              <li class="card__subtitle-item">123 л.c.</li>
+            <ul class="list-reset card__options">
+              <li class="card__option">Подарок</li>
+              <li class="card__option">Трейд-ин</li>
+              <li class="card__option">Кредит 24</li>
             </ul>
           </div>
+          <div class="card__content">
 
-          <div class="card__characteristics characteristics ">
-            <dl class="characteristics__list">
-              <div class="characteristics__item">
-                <dt>Класс</dt>
-                <dd>Седан</dd>
-              </div>
-              <div class="characteristics__item">
-                <dt>Пробег</dt>
-                <dd>11 200 км</dd>
-              </div>
-              <div class="characteristics__item">
-                <dt>Цвет</dt>
-                <dd>Серый металлик</dd>
-              </div>
-          </dl>
-          </div>
-
-
-          <div class="card__price">
-            <div>
-              <span class="card__price-from">Стоимость от</span>
-              <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
-
+            <div class="card__content-wrapper">
+              <h3 class="card__title">Hyunday Solaris</h3>
+              <ul class="list-reset card__subtitle-list">
+                <li class="card__subtitle-item">2015 г.,</li>
+                <li class="card__subtitle-item">1.6 л,</li>
+                <li class="card__subtitle-item">123 л.c.</li>
+              </ul>
             </div>
-            <div>
-              <span class="card__price-to">В кредит от</span>
-              <span class="card__price-value">3 600 ₽ </span>
+
+            <div class="card__characteristics characteristics ">
+              <dl class="characteristics__list">
+                <div class="characteristics__item">
+                  <dt>Класс</dt>
+                  <dd>Седан</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Пробег</dt>
+                  <dd>11 200 км</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Цвет</dt>
+                  <dd>Серый металлик</dd>
+                </div>
+              </dl>
             </div>
+
+
+            <div class="card__price">
+              <div>
+                <span class="card__price-from">Стоимость от</span>
+                <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
+
+              </div>
+              <div>
+                <span class="card__price-to">В кредит от</span>
+                <span class="card__price-value">3 600 ₽ </span>
+              </div>
+            </div>
+
+            <a href="#" class="button button--dark card__button">Получить скидку</a>
           </div>
+        </li>
+        <li class="catalog__item card swiper-slide">
+          <div class="card__header">
+            <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
+            <button class="btn-reset card__favorite">
+              <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#favorite"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="card__image-wrapper">
 
-          <a href="#" class="button button--dark card__button">Получить скидку</a>
-        </div>
-      </li>
-      <li class="catalog__item card">
-        <div class="card__header">
-          <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
-          <button class="btn-reset card__favorite">
-            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#favorite"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="card__image-wrapper">
-
-          <picture>
-            <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
-            <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
-          </picture>
-          <ul class="list-reset card__options">
-            <li class="card__option">Подарок</li>
-            <li class="card__option">Трейд-ин</li>
-            <li class="card__option">Кредит 24</li>
-          </ul>
-        </div>
-        <div class="card__content">
-
-          <div class="card__content-wrapper">
-            <h3 class="card__title">Hyunday Solaris</h3>
-            <ul class="list-reset card__subtitle-list">
-              <li class="card__subtitle-item">2015 г.,</li>
-              <li class="card__subtitle-item">1.6 л,</li>
-              <li class="card__subtitle-item">123 л.c.</li>
+            <picture>
+              <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
+              <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
+            </picture>
+            <ul class="list-reset card__options">
+              <li class="card__option">Подарок</li>
+              <li class="card__option">Трейд-ин</li>
+              <li class="card__option">Кредит 24</li>
             </ul>
           </div>
+          <div class="card__content">
 
-          <div class="card__characteristics characteristics ">
-            <dl class="characteristics__list">
-              <div class="characteristics__item">
-                <dt>Класс</dt>
-                <dd>Седан</dd>
-              </div>
-              <div class="characteristics__item">
-                <dt>Пробег</dt>
-                <dd>11 200 км</dd>
-              </div>
-              <div class="characteristics__item">
-                <dt>Цвет</dt>
-                <dd>Серый металлик</dd>
-              </div>
-          </dl>
-          </div>
-
-
-          <div class="card__price">
-            <div>
-              <span class="card__price-from">Стоимость от</span>
-              <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
-
+            <div class="card__content-wrapper">
+              <h3 class="card__title">Hyunday Solaris</h3>
+              <ul class="list-reset card__subtitle-list">
+                <li class="card__subtitle-item">2015 г.,</li>
+                <li class="card__subtitle-item">1.6 л,</li>
+                <li class="card__subtitle-item">123 л.c.</li>
+              </ul>
             </div>
-            <div>
-              <span class="card__price-to">В кредит от</span>
-              <span class="card__price-value">3 600 ₽ </span>
+
+            <div class="card__characteristics characteristics ">
+              <dl class="characteristics__list">
+                <div class="characteristics__item">
+                  <dt>Класс</dt>
+                  <dd>Седан</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Пробег</dt>
+                  <dd>11 200 км</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Цвет</dt>
+                  <dd>Серый металлик</dd>
+                </div>
+              </dl>
             </div>
+
+
+            <div class="card__price">
+              <div>
+                <span class="card__price-from">Стоимость от</span>
+                <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
+
+              </div>
+              <div>
+                <span class="card__price-to">В кредит от</span>
+                <span class="card__price-value">3 600 ₽ </span>
+              </div>
+            </div>
+
+            <a href="#" class="button button--dark card__button">Получить скидку</a>
           </div>
+        </li>
+        <li class="catalog__item card swiper-slide">
+          <div class="card__header">
+            <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
+            <button class="btn-reset card__favorite">
+              <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#favorite"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="card__image-wrapper">
 
-          <a href="#" class="button button--dark card__button">Получить скидку</a>
-        </div>
-      </li>
-      <li class="catalog__item card">
-        <div class="card__header">
-          <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
-          <button class="btn-reset card__favorite">
-            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#favorite"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="card__image-wrapper">
-
-          <picture>
-            <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
-            <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
-          </picture>
-          <ul class="list-reset card__options">
-            <li class="card__option">Подарок</li>
-            <li class="card__option">Трейд-ин</li>
-            <li class="card__option">Кредит 24</li>
-          </ul>
-        </div>
-        <div class="card__content">
-
-          <div class="card__content-wrapper">
-            <h3 class="card__title">Hyunday Solaris</h3>
-            <ul class="list-reset card__subtitle-list">
-              <li class="card__subtitle-item">2015 г.,</li>
-              <li class="card__subtitle-item">1.6 л,</li>
-              <li class="card__subtitle-item">123 л.c.</li>
+            <picture>
+              <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
+              <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
+            </picture>
+            <ul class="list-reset card__options">
+              <li class="card__option">Подарок</li>
+              <li class="card__option">Трейд-ин</li>
+              <li class="card__option">Кредит 24</li>
             </ul>
           </div>
+          <div class="card__content">
 
-          <div class="card__characteristics characteristics ">
-            <dl class="characteristics__list">
-              <div class="characteristics__item">
-                <dt>Класс</dt>
-                <dd>Седан</dd>
-              </div>
-              <div class="characteristics__item">
-                <dt>Пробег</dt>
-                <dd>11 200 км</dd>
-              </div>
-              <div class="characteristics__item">
-                <dt>Цвет</dt>
-                <dd>Серый металлик</dd>
-              </div>
-          </dl>
-          </div>
-
-
-          <div class="card__price">
-            <div>
-              <span class="card__price-from">Стоимость от</span>
-              <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
-
+            <div class="card__content-wrapper">
+              <h3 class="card__title">Hyunday Solaris</h3>
+              <ul class="list-reset card__subtitle-list">
+                <li class="card__subtitle-item">2015 г.,</li>
+                <li class="card__subtitle-item">1.6 л,</li>
+                <li class="card__subtitle-item">123 л.c.</li>
+              </ul>
             </div>
-            <div>
-              <span class="card__price-to">В кредит от</span>
-              <span class="card__price-value">3 600 ₽ </span>
+
+            <div class="card__characteristics characteristics ">
+              <dl class="characteristics__list">
+                <div class="characteristics__item">
+                  <dt>Класс</dt>
+                  <dd>Седан</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Пробег</dt>
+                  <dd>11 200 км</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Цвет</dt>
+                  <dd>Серый металлик</dd>
+                </div>
+              </dl>
             </div>
+
+
+            <div class="card__price">
+              <div>
+                <span class="card__price-from">Стоимость от</span>
+                <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
+
+              </div>
+              <div>
+                <span class="card__price-to">В кредит от</span>
+                <span class="card__price-value">3 600 ₽ </span>
+              </div>
+            </div>
+
+            <a href="#" class="button button--dark card__button">Получить скидку</a>
           </div>
+        </li>
+        <li class="catalog__item card swiper-slide">
+          <div class="card__header">
+            <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
+            <button class="btn-reset card__favorite">
+              <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#favorite"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="card__image-wrapper">
 
-          <a href="#" class="button button--dark card__button">Получить скидку</a>
-        </div>
-      </li>
-      <li class="catalog__item card">
-        <div class="card__header">
-          <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
-          <button class="btn-reset card__favorite">
-            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#favorite"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="card__image-wrapper">
-
-          <picture>
-            <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
-            <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
-          </picture>
-          <ul class="list-reset card__options">
-            <li class="card__option">Подарок</li>
-            <li class="card__option">Трейд-ин</li>
-            <li class="card__option">Кредит 24</li>
-          </ul>
-        </div>
-        <div class="card__content">
-
-          <div class="card__content-wrapper">
-            <h3 class="card__title">Hyunday Solaris</h3>
-            <ul class="list-reset card__subtitle-list">
-              <li class="card__subtitle-item">2015 г.,</li>
-              <li class="card__subtitle-item">1.6 л,</li>
-              <li class="card__subtitle-item">123 л.c.</li>
+            <picture>
+              <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
+              <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
+            </picture>
+            <ul class="list-reset card__options">
+              <li class="card__option">Подарок</li>
+              <li class="card__option">Трейд-ин</li>
+              <li class="card__option">Кредит 24</li>
             </ul>
           </div>
+          <div class="card__content">
 
-          <div class="card__characteristics characteristics ">
-            <dl class="characteristics__list">
-              <div class="characteristics__item">
-                <dt>Класс</dt>
-                <dd>Седан</dd>
-              </div>
-              <div class="characteristics__item">
-                <dt>Пробег</dt>
-                <dd>11 200 км</dd>
-              </div>
-              <div class="characteristics__item">
-                <dt>Цвет</dt>
-                <dd>Серый металлик</dd>
-              </div>
-          </dl>
-          </div>
-
-
-          <div class="card__price">
-            <div>
-              <span class="card__price-from">Стоимость от</span>
-              <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
-
+            <div class="card__content-wrapper">
+              <h3 class="card__title">Hyunday Solaris</h3>
+              <ul class="list-reset card__subtitle-list">
+                <li class="card__subtitle-item">2015 г.,</li>
+                <li class="card__subtitle-item">1.6 л,</li>
+                <li class="card__subtitle-item">123 л.c.</li>
+              </ul>
             </div>
-            <div>
-              <span class="card__price-to">В кредит от</span>
-              <span class="card__price-value">3 600 ₽ </span>
-            </div>
-          </div>
 
-          <a href="#" class="button button--dark card__button">Получить скидку</a>
-        </div>
-      </li>
-    </ul>
+            <div class="card__characteristics characteristics ">
+              <dl class="characteristics__list">
+                <div class="characteristics__item">
+                  <dt>Класс</dt>
+                  <dd>Седан</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Пробег</dt>
+                  <dd>11 200 км</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Цвет</dt>
+                  <dd>Серый металлик</dd>
+                </div>
+              </dl>
+            </div>
+
+
+            <div class="card__price">
+              <div>
+                <span class="card__price-from">Стоимость от</span>
+                <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
+
+              </div>
+              <div>
+                <span class="card__price-to">В кредит от</span>
+                <span class="card__price-value">3 600 ₽ </span>
+              </div>
+            </div>
+
+            <a href="#" class="button button--dark card__button">Получить скидку</a>
+          </div>
+        </li>
+        <li class="catalog__item card swiper-slide">
+          <div class="card__header">
+            <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
+            <button class="btn-reset card__favorite">
+              <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#favorite"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="card__image-wrapper">
+
+            <picture>
+              <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
+              <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
+            </picture>
+
+            <ul class="list-reset card__options">
+              <li class="card__option">Подарок</li>
+              <li class="card__option">Трейд-ин</li>
+              <li class="card__option">Кредит 24</li>
+            </ul>
+          </div>
+          <div class="card__content">
+
+            <div class="card__content-wrapper">
+              <h3 class="card__title">Hyunday Solaris</h3>
+              <ul class="list-reset card__subtitle-list">
+                <li class="card__subtitle-item">2015 г.,</li>
+                <li class="card__subtitle-item">1.6 л,</li>
+                <li class="card__subtitle-item">123 л.c.</li>
+              </ul>
+            </div>
+
+            <div class="card__characteristics characteristics ">
+              <dl class="characteristics__list">
+                <div class="characteristics__item">
+                  <dt>Класс</dt>
+                  <dd>Седан</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Пробег</dt>
+                  <dd>11 200 км</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Цвет</dt>
+                  <dd>Серый металлик</dd>
+                </div>
+              </dl>
+            </div>
+
+
+            <div class="card__price">
+              <div>
+                <span class="card__price-from">Стоимость от</span>
+                <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
+
+              </div>
+              <div>
+                <span class="card__price-to">В кредит от</span>
+                <span class="card__price-value">3 600 ₽ </span>
+              </div>
+            </div>
+
+            <a href="#" class="button button--dark card__button">Получить скидку</a>
+          </div>
+        </li>
+        <li class="catalog__item card swiper-slide">
+          <div class="card__header">
+            <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
+            <button class="btn-reset card__favorite">
+              <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#favorite"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="card__image-wrapper">
+
+            <picture>
+              <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
+              <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
+            </picture>
+            <ul class="list-reset card__options">
+              <li class="card__option">Подарок</li>
+              <li class="card__option">Трейд-ин</li>
+              <li class="card__option">Кредит 24</li>
+            </ul>
+          </div>
+          <div class="card__content">
+
+            <div class="card__content-wrapper">
+              <h3 class="card__title">Hyunday Solaris</h3>
+              <ul class="list-reset card__subtitle-list">
+                <li class="card__subtitle-item">2015 г.,</li>
+                <li class="card__subtitle-item">1.6 л,</li>
+                <li class="card__subtitle-item">123 л.c.</li>
+              </ul>
+            </div>
+
+            <div class="card__characteristics characteristics ">
+              <dl class="characteristics__list">
+                <div class="characteristics__item">
+                  <dt>Класс</dt>
+                  <dd>Седан</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Пробег</dt>
+                  <dd>11 200 км</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Цвет</dt>
+                  <dd>Серый металлик</dd>
+                </div>
+              </dl>
+            </div>
+
+
+            <div class="card__price">
+              <div>
+                <span class="card__price-from">Стоимость от</span>
+                <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
+
+              </div>
+              <div>
+                <span class="card__price-to">В кредит от</span>
+                <span class="card__price-value">3 600 ₽ </span>
+              </div>
+            </div>
+
+            <a href="#" class="button button--dark card__button">Получить скидку</a>
+          </div>
+        </li>
+        <li class="catalog__item card swiper-slide">
+          <div class="card__header">
+            <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
+            <button class="btn-reset card__favorite">
+              <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#favorite"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="card__image-wrapper">
+
+            <picture>
+              <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
+              <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
+            </picture>
+            <ul class="list-reset card__options">
+              <li class="card__option">Подарок</li>
+              <li class="card__option">Трейд-ин</li>
+              <li class="card__option">Кредит 24</li>
+            </ul>
+          </div>
+          <div class="card__content">
+
+            <div class="card__content-wrapper">
+              <h3 class="card__title">Hyunday Solaris</h3>
+              <ul class="list-reset card__subtitle-list">
+                <li class="card__subtitle-item">2015 г.,</li>
+                <li class="card__subtitle-item">1.6 л,</li>
+                <li class="card__subtitle-item">123 л.c.</li>
+              </ul>
+            </div>
+
+            <div class="card__characteristics characteristics ">
+              <dl class="characteristics__list">
+                <div class="characteristics__item">
+                  <dt>Класс</dt>
+                  <dd>Седан</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Пробег</dt>
+                  <dd>11 200 км</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Цвет</dt>
+                  <dd>Серый металлик</dd>
+                </div>
+              </dl>
+            </div>
+
+
+            <div class="card__price">
+              <div>
+                <span class="card__price-from">Стоимость от</span>
+                <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
+
+              </div>
+              <div>
+                <span class="card__price-to">В кредит от</span>
+                <span class="card__price-value">3 600 ₽ </span>
+              </div>
+            </div>
+
+            <a href="#" class="button button--dark card__button">Получить скидку</a>
+          </div>
+        </li>
+        <li class="catalog__item card swiper-slide">
+          <div class="card__header">
+            <img class="card__logo" src="img/huanday-logo.png" alt="логотип Hyunday" width="41" height="31">
+            <button class="btn-reset card__favorite">
+              <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#favorite"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="card__image-wrapper">
+
+            <picture>
+              <source srcset="img/solaris.webp 1x, img/solaris@2x.webp 2x" type="image/webp">
+              <img class="card__image" loading="lazy" src="img/solaris.jpg" srcset="img/solaris@2x.jpg 2x" alt="Hyunday Solaris">
+            </picture>
+            <ul class="list-reset card__options">
+              <li class="card__option">Подарок</li>
+              <li class="card__option">Трейд-ин</li>
+              <li class="card__option">Кредит 24</li>
+            </ul>
+          </div>
+          <div class="card__content">
+
+            <div class="card__content-wrapper">
+              <h3 class="card__title">Hyunday Solaris</h3>
+              <ul class="list-reset card__subtitle-list">
+                <li class="card__subtitle-item">2015 г.,</li>
+                <li class="card__subtitle-item">1.6 л,</li>
+                <li class="card__subtitle-item">123 л.c.</li>
+              </ul>
+            </div>
+
+            <div class="card__characteristics characteristics ">
+              <dl class="characteristics__list">
+                <div class="characteristics__item">
+                  <dt>Класс</dt>
+                  <dd>Седан</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Пробег</dt>
+                  <dd>11 200 км</dd>
+                </div>
+                <div class="characteristics__item">
+                  <dt>Цвет</dt>
+                  <dd>Серый металлик</dd>
+                </div>
+              </dl>
+            </div>
+
+
+            <div class="card__price">
+              <div>
+                <span class="card__price-from">Стоимость от</span>
+                <span class="card__price-value" >434 000  &#8381;<span class="card__price-value card__price-value--total">534 000  &#8381;</span></span>
+
+              </div>
+              <div>
+                <span class="card__price-to">В кредит от</span>
+                <span class="card__price-value">3 600 ₽ </span>
+              </div>
+            </div>
+
+            <a href="#" class="button button--dark card__button">Получить скидку</a>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+
     <button class="button btn-reset catalog__btn-more" type="button">Загрузить еще</button>
   </div>
 

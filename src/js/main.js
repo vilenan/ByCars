@@ -7,7 +7,61 @@ const scroll = new SmoothScroll('a[href*="#"]');
 import { disableScroll } from './functions/disable-scroll';
 import { enableScroll } from './functions/enable-scroll';
 
-import GraphModal from 'graph-modal';
+//Swiper
+
+import Swiper, { Pagination } from 'swiper';
+Swiper.use([Pagination]);
+
+window.addEventListener('DOMContentLoaded', () => {
+
+  const resizableSwiper = (breakpoint, swiperClass, swiperSettings) => {
+    let swiper;
+
+    breakpoint = window.matchMedia(breakpoint);
+
+    const enableSwiper = function(className, settings) {
+      swiper = new Swiper(className, settings);
+    }
+
+    const checker = function() {
+      if (breakpoint.matches) {
+        return enableSwiper(swiperClass, swiperSettings);
+      } else {
+        if (swiper !== undefined) swiper.destroy(true, true);
+        return;
+      }
+    };
+
+    breakpoint.addEventListener('change', checker);
+    checker();
+  }
+
+
+  resizableSwiper(
+    '(min-width: 1024px)',
+    '.swiper-container',
+    {
+      loop: true,
+      spaceBetween: 30,
+      slidesPerView: 3,
+      updateOnWindowResize: true,
+      breakpoints: {
+        1320: {
+          slidesPerView: 4,
+          spaceBetween: 20
+        },
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    },
+  );
+
+});
+
+//Modal
+  import GraphModal from 'graph-modal';
 const modal = new GraphModal();
 
 (function(){
@@ -56,4 +110,22 @@ anchors.forEach(anchor => {
       behavior: "smooth",
     });
   })
+});
+
+const cards = document.querySelectorAll('.card');
+const cardsNumber = cards.length;
+const cardsArray = Array.from(cards);
+
+const btnMore = document.querySelector('.catalog__btn-more');
+let itemsShown = 3;
+
+btnMore.addEventListener('click', () => {
+  itemsShown += 2;
+  const newArray = cardsArray.slice(0, itemsShown);
+  newArray.forEach( item => item.classList.add('catalog__item--visible'));
+  if (newArray.length === cardsNumber) {
+    btnMore.style.display = 'none';
+  }
+
 })
+
